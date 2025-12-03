@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adu & Antwi-Darko - Outdooring Ceremony Invitation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+   <link rel="stylesheet" href="/responsive.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Celebration</h1>
+            <div class="subtitle">The Families of Adu & Antwi-Darko which to invite to be part of the</div>
+            
+            <div class="couple-names">
+                <div class="name">Naming</div>
+                <div class="and">&</div>
+                <div class="name">Outdooring</div>
+            </div>
+            
+            <p class="subtitle">Ceremony of their twin babies</p>
+        </header>
+        
+        <!-- Date & Calendar Section -->
+        <div class="section">
+            <h2 class="section-title"><i class="far fa-calendar-alt"></i> Date</h2>
+            <div class="date-info">
+                <div class="date">Saturday, December 06, 2025</div>
+                <div class="time">0800 HRS</div>
+                <button class="calendar-btn" id="addToCalendarBtn">
+                    <i class="far fa-calendar-plus"></i> Add to Calendar
+                </button>
+            </div>
+        </div>
+        
+        <!-- Location Section -->
+        <div class="section">
+            <h2 class="section-title"><i class="fas fa-map-marker-alt"></i> Location</h2>
+            <div class="location-info">
+                <div class="location">Bethel Methodist Church</div>
+                <div class="address">Tema Comm 8</div>
+                <a target="_blank" href="https://maps.app.goo.gl/rVMwkoLLuGjv6kPw7?g_st=ipc" class="map-btn">
+                    <i class="fas fa-directions"></i> Get Directions
+                </a>
+            </div>
+        </div>
+        
+        <!-- Contact Section -->
+        <div class="section">
+            <h2 class="section-title"><i class="fas fa-phone-alt"></i> Contact</h2>
+            <div class="contact-info">
+                <div class="phone-number">053 413 8820</div>
+                <div class="phone-subtext">For any questions or to RSVP</div>
+                <button class="call-btn" id="contactCallBtn">
+                    <i class="fas fa-phone"></i> Call Now
+                </button>
+            </div>
+        </div>
+        
+        <!-- Reception Section -->
+        <div class="section">
+            <h2 class="section-title"><i class="fas fa-map-marker-alt"></i> Reception</h2>
+            <div class="location-info">
+                <div class="location">EstieRose</div>
+                <div class="address">Tema Comm 8</div>
+                <a target="_blank" href="https://maps.app.goo.gl/viGDdYcareRw3Sb57?g_st=am
+
+Reception @EstieRose Comm 8, Tema." class="map-btn">
+                    <i class="fas fa-directions"></i> Get Directions
+                </a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>This invitation was created and Powered by</p>
+            <div class="footer-logo">Peniel Ville</div>
+            <button class="call-btn" id="footerCallBtn">
+                    <i class="fas fa-phone"></i> Call Now
+                </button>
+        </footer>
+    </div>
+    
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeContactModal">&times;</span>
+            <h2 class="section-title" style="justify-content: flex-start; margin-bottom: 30px;">
+                <i class="fas fa-phone-alt"></i> Contact Numbers
+            </h2>
+            <p style="margin-bottom: 25px; color: #666;">Choose a number to call:</p>
+            
+            <div class="contact-options">
+                <a href="tel:233534138820" class="contact-option">
+                    <i class="fas fa-phone"></i>
+                    <span>053 413 8820</span>
+                </a>
+                <a href="tel:233269397654" class="contact-option">
+                    <i class="fas fa-phone"></i>
+                    <span>026 939 7654</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="contactModals" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeContactModal">&times;</span>
+            <h2 class="section-title" style="justify-content: flex-start; margin-bottom: 30px;">
+                <i class="fas fa-phone-alt"></i> Contact Numbers
+            </h2>
+            <p style="margin-bottom: 25px; color: #666;">Choose a number to call:</p>
+            
+            <div class="contact-options">
+                <a href="tel:233574428980" class="contact-option">
+                    <i class="fas fa-phone"></i>
+                    <span>057 442 8980</span>
+                </a>
+                <a href="tel:233249356352" class="contact-option">
+                    <i class="fas fa-phone"></i>
+                    <span>024 935 6352</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Calendar Modal -->
+    <div id="calendarModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <h2 class="section-title" style="justify-content: flex-start; margin-bottom: 30px;">
+                <i class="far fa-calendar-alt"></i> Add to Calendar
+            </h2>
+            <p style="margin-bottom: 20px; color: #666;">Select your calendar to add this event:</p>
+            
+            <div class="calendar-options">
+                <a href="#" class="calendar-option" id="googleCalendar">
+                    <i class="fab fa-google"></i>
+                    <span>Google Calendar</span>
+                </a>
+                <a href="#" class="calendar-option" id="appleCalendar">
+                    <i class="fab fa-apple"></i>
+                    <span>Apple Calendar</span>
+                </a>
+                <a href="#" class="calendar-option" id="outlookCalendar">
+                    <i class="fab fa-microsoft"></i>
+                    <span>Outlook</span>
+                </a>
+                <a href="#" class="calendar-option" id="downloadIcs">
+                    <i class="fas fa-download"></i>
+                    <span>Download .ics file</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Contact Modal Functionality
+        const contactCallBtn = document.getElementById('contactCallBtn');
+        const footerCallBtn = document.getElementById('footerCallBtn');
+        const contactModals = document.getElementById('contactModals');
+        const closeContactModal = document.getElementById('closeContactModal');
+        
+        // Open contact modal when "Call Now" is clicked
+        contactCallBtn.addEventListener('click', function() {
+            contactModal.style.display = 'flex';
+        });
+        
+        footerCallBtn.addEventListener('click', function() {
+            contactModals.style.display = 'flex';
+        });
+        
+        // Close modal when X is clicked
+        closeContactModal.addEventListener('click', function() {
+            contactModal.style.display = 'none';
+        });
+        closeContactModal.addEventListener('click', function() {
+            contactModals.style.display = 'none';
+        });
+        
+        // Close modal when clicking outside of it
+        window.addEventListener('click', function(event) {
+            if (event.target === contactModal) {
+                contactModal.style.display = 'none';
+            }
+        });
+        
+        // Calendar Modal Functionality
+        const calendarBtn = document.getElementById('addToCalendarBtn');
+        const calendarModal = document.getElementById('calendarModal');
+        const closeModal = document.getElementById('closeModal');
+        
+        // Open modal when "Add to Calendar" is clicked
+        calendarBtn.addEventListener('click', function() {
+            calendarModal.style.display = 'flex';
+        });
+        
+        // Close modal when X is clicked
+        closeModal.addEventListener('click', function() {
+            calendarModal.style.display = 'none';
+        });
+        
+        // Close modal when clicking outside of it
+        window.addEventListener('click', function(event) {
+            if (event.target === calendarModal) {
+                calendarModal.style.display = 'none';
+            }
+        });
+        
+        // Calendar option click handlers
+        document.getElementById('googleCalendar').addEventListener('click', function(e) {
+            e.preventDefault();
+            const eventTitle = 'Naming & Outdooring Ceremony - Adu & Antwi-Darko';
+            const eventDescription = 'Naming and Outdooring ceremony of twin babies';
+            const location = 'Bethel Methodist Church, Tema Comm 8';
+            const startDate = '20251206T080000';
+            const endDate = '20251206T120000';
+            
+            const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(eventTitle)}&details=${encodeURIComponent(eventDescription)}&location=${encodeURIComponent(location)}&dates=${startDate}/${endDate}`;
+            window.open(googleCalendarUrl, '_blank');
+        });
+        
+        document.getElementById('appleCalendar').addEventListener('click', function(e) {
+            e.preventDefault();
+            const icsContent = generateICSContent();
+            const blob = new Blob([icsContent], { type: 'text/calendar' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'naming-outdooring.ics';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        });
+        
+        document.getElementById('outlookCalendar').addEventListener('click', function(e) {
+            e.preventDefault();
+            const eventTitle = 'Naming & Outdooring Ceremony - Adu & Antwi-Darko';
+            const eventDescription = 'Naming and Outdooring ceremony of twin babies';
+            const location = 'Bethel Methodist Church, Tema Comm 8';
+            const startDate = '2025-12-06T08:00:00';
+            const endDate = '2025-12-06T12:00:00';
+            
+            const outlookUrl = `https://outlook.live.com/calendar/0/deeplink/compose?subject=${encodeURIComponent(eventTitle)}&body=${encodeURIComponent(eventDescription)}&location=${encodeURIComponent(location)}&startdt=${encodeURIComponent(startDate)}&enddt=${encodeURIComponent(endDate)}`;
+            window.open(outlookUrl, '_blank');
+        });
+        
+        document.getElementById('downloadIcs').addEventListener('click', function(e) {
+            e.preventDefault();
+            const icsContent = generateICSContent();
+            const blob = new Blob([icsContent], { type: 'text/calendar' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'naming-outdooring.ics';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        });
+        
+        // Function to generate ICS file content
+        function generateICSContent() {
+            const icsContent = `BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Naming & Outdooring Ceremony//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Naming & Outdooring Ceremony
+X-WR-TIMEZONE:Africa/Accra
+BEGIN:VEVENT
+UID:naming-outdooring-2025@example.com
+DTSTAMP:20251203T000000Z
+DTSTART:20251206T080000
+DTEND:20251206T120000
+SUMMARY:Naming & Outdooring Ceremony - Adu & Antwi-Darko
+DESCRIPTION:Naming and Outdooring ceremony of the twin babies of the Adu & Antwi-Darko families
+LOCATION:Bethel Methodist Church, Tema Comm 8, Ghana
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+END:VCALENDAR`;
+            return icsContent;
+        }
+        
+        // Map button click handler
+        // document.querySelector('.map-btn').addEventListener('click', function(e) {
+        //     e.preventDefault();
+        //     alert('This would open a map to the location. ');
+        // });
+        
+        // Gift registry button click handler
+        document.querySelector('.gift-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('This would open the gift registry. This is a demo.');
+        });
+        
+        // Add some visual effect when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach((section, index) => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    section.style.opacity = '1';
+                    section.style.transform = 'translateY(0)';
+                }, 300 + (index * 200));
+            });
+        });
+    </script>
+</body>
+</html>
