@@ -107,7 +107,7 @@ Reception @EstieRose Comm 8, Tema." class="map-btn">
 
     <div id="contactModals" class="modal">
         <div class="modal-content">
-            <span class="close-btn" id="closeContactModal">&times;</span>
+            <span class="close-btn" id="closeContactModals">&times;</span>
             <h2 class="section-title" style="justify-content: flex-start; margin-bottom: 30px;">
                 <i class="fas fa-phone-alt"></i> Contact Numbers
             </h2>
@@ -160,30 +160,38 @@ Reception @EstieRose Comm 8, Tema." class="map-btn">
         // Contact Modal Functionality
         const contactCallBtn = document.getElementById('contactCallBtn');
         const footerCallBtn = document.getElementById('footerCallBtn');
+        const contactModal = document.getElementById('contactModal');
         const contactModals = document.getElementById('contactModals');
         const closeContactModal = document.getElementById('closeContactModal');
+        const closeContactModals = document.getElementById('closeContactModals');
         
-        // Open contact modal when "Call Now" is clicked
+        // Open contact modal when "Call Now" is clicked in Contact section
         contactCallBtn.addEventListener('click', function() {
             contactModal.style.display = 'flex';
         });
         
+        // Open contact modal when "Call Now" is clicked in Footer
         footerCallBtn.addEventListener('click', function() {
             contactModals.style.display = 'flex';
         });
         
-        // Close modal when X is clicked
+        // Close Contact Section modal when X is clicked
         closeContactModal.addEventListener('click', function() {
             contactModal.style.display = 'none';
         });
-        closeContactModal.addEventListener('click', function() {
+        
+        // Close Footer modal when X is clicked
+        closeContactModals.addEventListener('click', function() {
             contactModals.style.display = 'none';
         });
         
-        // Close modal when clicking outside of it
+        // Close modals when clicking outside of them
         window.addEventListener('click', function(event) {
             if (event.target === contactModal) {
                 contactModal.style.display = 'none';
+            }
+            if (event.target === contactModals) {
+                contactModals.style.display = 'none';
             }
         });
         
